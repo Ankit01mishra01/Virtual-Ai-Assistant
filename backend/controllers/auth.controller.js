@@ -27,7 +27,8 @@ export const Login = async (req, res) => {
     res.cookie("token", token, {
       httpOnly: true,
       maxAge: 1000 * 60 * 60 * 24, // 1 day
-      secure: false
+      sameSite:"None"
+      secure: true
     });
     console.log("Cookie set successfully");
 
@@ -69,7 +70,8 @@ export const signUp = async (req, res) => {
     res.cookie("token", token, {
       httpOnly: true,
       maxAge: 1000 * 60 * 60 * 24,
-      secure: false
+      sameSite:"None"
+      secure: true
     });
     console.log("Signup cookie set successfully");
 
