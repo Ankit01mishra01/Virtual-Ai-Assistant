@@ -22,7 +22,7 @@ const __dirname = path.dirname(__filename);
 app.use('/uploads', express.static(path.join(__dirname, 'public')));
 
 app.use(cors({
-  origin:"http://localhost:5173",
+  origin:"https://virtual-ai-assistant-frontend.onrender.com",
   credentials: true 
 }))
 const port=process.env.PORT || 8000
