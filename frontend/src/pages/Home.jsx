@@ -8,7 +8,7 @@ import React, {
 import { useNavigate } from "react-router-dom";
 import { userDataContext } from "../context/UserContext";
 import axios from "axios";
-import AIImg from "../assets/ai.gif";
+import AIImg from "../assets/AI.gif";
 import userImg from "../assets/user.gif";
 
 function Home() {
