@@ -4,7 +4,7 @@ import axios from "axios";
 export const userDataContext = createContext(null);
 
 function UserContext({ children }) {
-  const serverUrl = "http://localhost:8000";
+  const serverUrl = "https://virtual-ai-assistant-backend.onrender.com";
 
   // ensure axios sends cookies for every request
   axios.defaults.baseURL = serverUrl;
